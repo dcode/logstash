@@ -21,6 +21,8 @@ consistent with other Elastic products. Full directory layout is described in <<
 (in core and plugins) were too noisy at INFO level, so we had to audit log messages and switch some of them to DEBUG
 level.
 
+* **Logging Output Directory Configuration:** The configuration parameter in `logstash.yml` for the log output directory has changed from `path.log` to `path.logs`. This is part of the switch to log4j as the default log output, which now produces a JSON-formatted log and a plain-text log by default. (See <<releasenotes>> for more).
+
 * **Command Line Interface:** Most of the long form <<command-line-flags,options>> have been renamed
 to adhere to the yml dot notation to be used in the settings file. Short form options have not been changed.
 
